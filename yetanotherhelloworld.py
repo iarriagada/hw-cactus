@@ -11,3 +11,5 @@ if int(enthus_level) is 3:
     print('\'sup world')
 if int(enthus_level) is 4:
     print('goodbye world x(')
+elif int(enthus_level) not in [1,2,3,4]:
+    print('There\'s nothing I can do for you, goodbye')
