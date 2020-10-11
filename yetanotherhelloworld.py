@@ -6,7 +6,7 @@ while True:
     try:
         enthus_level = input('Very(1)/Normal(2)/Meh(3)/Areyoukiddingis2020(4): ')
         if int(enthus_level) is 1:
-            print('Hello World Heck Yeah!!!')
+            print('Hello World Yeah!!!')
         if int(enthus_level) is 2:
             print('Hello World!')
         if int(enthus_level) is 3:
