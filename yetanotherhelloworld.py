@@ -15,9 +15,11 @@ print('How pumped do you want to feel?')
 
 while True:
     try:
-        enthus_level = input('Very(1)/Normal(2)/Meh(3)/Areyoukiddingis2020(4)'\
-                             '/surpriseme(5): ')
-        if int(enthus_level) is 1:
+        enthus_level = input('Zen(0)/Very(1)/Normal(2)/Meh(3)'\
+                             '/Areyoukiddingis2020(4)/surpriseme(5): ')
+        if int(enthus_level) is 0:
+            print('***Nothing can touch me***')
+        if int(enthus_level) is 0:
             print('Hello World Heck Yeah!!!')
         if int(enthus_level) is 2:
             print('Hello World!')
@@ -28,7 +30,7 @@ while True:
         if int(enthus_level) is 5:
             rand_pos = random.randint(0,7)
             print(randmsg[rand_pos])
-        elif int(enthus_level) not in [1,2,3,4,5]:
+        elif int(enthus_level) not in range(0,6):
             print('There\'s nothing I can do for you, goodbye')
         break
     except ValueError:
