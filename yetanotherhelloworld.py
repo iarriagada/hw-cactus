@@ -35,3 +35,11 @@ while True:
         break
     except ValueError:
         print('The option has to be an integer')
+
+msg_opt = input('Do you wish to leave a message for Future You? (y/n): ')
+if msg_opt in ['Y','y','yes','YES','Yes']:
+    message = input('Enter message:\n> ')
+    with open('toFutureMe.txt', 'w') as f:
+        f.write(message)
+
+print('Hang in there. Have a nice day')
