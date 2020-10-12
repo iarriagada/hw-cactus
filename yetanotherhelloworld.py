@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 import random
 
-randmsg = ['Hello, is it me you are looking for',
-           'You say goodbye, I say hello. Hello, hello',
-           'Hello, can you hear me',
-           'Hello Darkness, my old friend',
-           'Goodbye, yellow brick road',
-           'Hey, I just met you, and this is crazy...',
-           'Hello, I love you, won\'t you tell me your name',
-           'Bye, bye, miss american pie']
+msg_array = ['Hello, is it me you are looking for',
+             'You say goodbye, I say hello. Hello, hello',
+             'Hello, can you hear me',
+             'Hello Darkness, my old friend',
+             'Goodbye, yellow brick road',
+             'Hey, I just met you, and this is crazy...',
+             'Hello, I love you, won\'t you tell me your name',
+             'Bye, bye, miss american pie']
 
 print('This is the Hello world greeter')
 print('How pumped do you want to feel?')
@@ -29,8 +29,8 @@ while True:
         if int(enthus_level) is 4:
             print('goodbye world x(')
         if int(enthus_level) is 5:
-            rand_pos = random.randint(0,7)
-            print(randmsg[rand_pos])
+            rand_msg = random.choice(msg_array)
+            print(rand_msg)
         if int(enthus_level) is 6:
             with open('toFutureMe.txt', 'r') as f:
                 print(f.readlines())
