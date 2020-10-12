@@ -32,8 +32,11 @@ while True:
             rand_msg = random.choice(msg_array)
             print(rand_msg)
         if int(enthus_level) is 6:
-            with open('toFutureMe.txt', 'r') as f:
-                print(f.readlines())
+            try:
+                with open('toFutureMe.txt', 'r') as f:
+                    print(f.readlines())
+            except FileNotFoundError:
+                print('Past you didn\'t leave a message')
         elif int(enthus_level) not in range(0,7):
             print('There\'s nothing I can do for you, goodbye')
         break
